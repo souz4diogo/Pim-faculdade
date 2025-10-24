@@ -1,6 +1,6 @@
 alunos = []
 atividades = []
-respostas = []  
+respostas = [] 
 
 
 
