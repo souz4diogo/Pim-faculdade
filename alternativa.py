@@ -111,7 +111,7 @@ def autenticar(usuarios):
         if u.email.lower() == email.lower() and u.verificar_senha(senha):
             print(f"\n✅ Login bem-sucedido! Bem-vindo(a), {u.nome}.")
 
-            # Se professor com senha provisória, obrigar alterar
+            # Se professor estiver com senha provisória, obriga alterar
             if isinstance(u, Professor) and u.senha_provisoria:
                 print("⚠️ Você está usando a senha provisória. É obrigatório alterá-la.")
                 while True:
